@@ -1,3 +1,5 @@
 hoang tran
 git   kevin tran 
 new changes for my branch  
+backup information for git 
+another information to check dif 
