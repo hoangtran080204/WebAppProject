@@ -1,2 +1,3 @@
 # WebAppProject
-Testing project for full-stack development 
+GOOGLE HOMEPAGE PROJECT     
+Using HTML and CSS 
