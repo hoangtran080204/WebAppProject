@@ -1,0 +1,108 @@
+:root{
+/*
+Element selector
+*/
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Roboto,aerial,sans-serif;
+    font-size: 1.4rem;
+    margin : 0px;
+}
+main{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top : 11.5rem;
+    
+}
+ul{
+    list-style : none;
+}
+a{
+    text-decoration : none;
+    color : inherit;
+}
+img{
+    display: block;
+    
+}
+button{
+    height: 30px;
+    border : none;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width : 100%;
+    margin-right: 72px;
+    margin-top: 1.5rem;
+}
+/*
+Class seletor
+*/
+.search-bar{
+   margin-top: 3.8rem;
+   width : 582px;
+   height: 34px;
+   border-radius : 25px;
+   border-style : solid;
+   display : flex;
+   align-items : center;
+   justify-content : space-between;
+}
+.search-bar input{
+    width : 80%;
+    border: none;  
+    
+}
+.search-bar .icon{
+   height: 20px;
+   width : 20px;
+}
+
+.search-bar .mic{
+    height: 20px;
+    width : 20px;
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    width: 588px;
+    margin-top : 3.8rem;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .left-nav{
+    display : flex;
+    flex-direction : row;
+    width : 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav .link{
+    margin-right : 15px;
+}
+nav .right-nav{
+    display : flex;
+    flex-direction : row;
+    margin-right: 50px;
+    width : 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .right-nav .app-icon{
+    width: 20px;
+    height: 20px;
+}
+nav .right-nav .avatar-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}   
