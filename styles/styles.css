@@ -1,15 +1,19 @@
 :root{
+--footer-background-color: #f2f2f2;
+--footer-text-color: #70757a;
+--button-color: #f8f9fa;
+}
 /*
 Element selector
 */
-}
 html{
     font-size: 62.5%;
+    height: 100%;
 }
 body{
     font-family: Roboto,aerial,sans-serif;
     font-size: 1.4rem;
-    margin : 0px;
+    margin : 6px;
 }
 main{
     display : flex;
@@ -31,8 +35,18 @@ img{
     
 }
 button{
-    height: 30px;
-    border : none;
+    height: 36px;
+    min-width: 54px;
+    border : 1px solid var(--button-color); 
+    background-color: var(--button-color);
+}
+input{
+    font: inherit;
+    height: 36px;
+
+}
+input:focus{
+    outline: none;
 }
 nav{
     display: flex;
@@ -40,8 +54,21 @@ nav{
     justify-content:space-around;
     align-items: center;
     width : 100%;
-    margin-right: 72px;
+    
     margin-top: 1.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--footer-background-color);
+    
+    
 }
 /*
 Class seletor
@@ -49,7 +76,7 @@ Class seletor
 .search-bar{
    margin-top: 3.8rem;
    width : 582px;
-   height: 34px;
+   height: 44px;
    border-radius : 25px;
    border-style : solid;
    display : flex;
@@ -74,6 +101,7 @@ Class seletor
     display: flex;
     flex-direction: row;
     width: 588px;
+    height: 58px;
     margin-top : 3.8rem;
     align-items: center;
     justify-content: space-around;
@@ -85,13 +113,13 @@ nav .left-nav{
     justify-content: flex-start;
     align-items: center;
 }
-nav .link{
+.link{
     margin-right : 15px;
 }
 nav .right-nav{
     display : flex;
     flex-direction : row;
-    margin-right: 50px;
+    
     width : 100%;
     justify-content: flex-end;
     align-items: center;
@@ -105,4 +133,22 @@ nav .right-nav .avatar-icon{
     height: 20px;
     border-radius: 50%;
     
-}   
+}
+footer .left-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .right-footer{
+    display : flex;
+    flex-direction : row;
+    margin-right: 50px;
+    width : 100%;
+    justify-content: flex-end;
+    align-items: center;
+} 
+footer li{
+    color : var(--footer-text-color);
+}
