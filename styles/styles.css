@@ -2,6 +2,14 @@
 --footer-background-color: #f2f2f2;
 --footer-text-color: #70757a;
 --button-color: #f8f9fa;
+--button-text-color: #3c4043;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /*
 Element selector
@@ -13,18 +21,22 @@ html{
 body{
     font-family: Roboto,aerial,sans-serif;
     font-size: 1.4rem;
-    margin : 6px;
+    margin: 0px;
 }
 main{
     display : flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top : 11.5rem;
+    margin-top : 10rem;
+    padding-bottom: 47px;   
     
 }
 ul{
     list-style : none;
+}
+li:hover{
+    text-decoration: underline;
 }
 a{
     text-decoration : none;
@@ -36,9 +48,15 @@ img{
 }
 button{
     height: 36px;
-    min-width: 54px;
-    border : 1px solid var(--button-color); 
+    width: 140px;
+    border : 1px solid var(--button-color);
+    border-radius: 3px; 
     background-color: var(--button-color);
+    color: var(--button-text-color);
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
 }
 input{
     font: inherit;
@@ -51,11 +69,12 @@ input:focus{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    
     align-items: center;
     width : 100%;
+    height: 60px;
     
-    margin-top: 1.5rem;
+    padding: 0.6rem 2.6rem;
 }
 footer{
     position: absolute;
@@ -63,9 +82,11 @@ footer{
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 47px;
+    padding: 0 26px;
     background-color: var(--footer-background-color);
     
     
@@ -75,10 +96,11 @@ Class seletor
 */
 .search-bar{
    margin-top: 3.8rem;
-   width : 582px;
-   height: 44px;
+   padding: 0px 15px;
+   width : 584px;
+   height: 49px;
    border-radius : 25px;
-   border-style : solid;
+   border : 1px solid lightgray;
    display : flex;
    align-items : center;
    justify-content : space-between;
@@ -89,20 +111,23 @@ Class seletor
     
 }
 .search-bar .icon{
-   height: 20px;
-   width : 20px;
+   height: 13px;
+   width : 13px;
 }
 
 .search-bar .mic{
-    height: 20px;
-    width : 20px;
+    height: 24px;
+    width : 24px;
+}
+.search-bar .mic:hover{
+    cursor: pointer;
 }
 .search-box{
     display: flex;
     flex-direction: row;
     width: 588px;
     height: 58px;
-    margin-top : 3.8rem;
+    margin-top : 1.8rem;
     align-items: center;
     justify-content: space-around;
 }
@@ -114,7 +139,7 @@ nav .left-nav{
     align-items: center;
 }
 .link{
-    margin-right : 15px;
+    margin-right : 20px;
 }
 nav .right-nav{
     display : flex;
@@ -125,14 +150,19 @@ nav .right-nav{
     align-items: center;
 }
 nav .right-nav .app-icon{
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
+    opacity: 0.7;
 }
 nav .right-nav .avatar-icon{
     width: 20px;
     height: 20px;
     border-radius: 50%;
     
+}
+nav .right-nav .distinct-font{
+    font-family: aerial, sans-serif;
+    font-size: 13px;
 }
 footer .left-footer{
     display: flex;
